@@ -1,0 +1,84 @@
+{
+  "players": [
+    {
+      "id": 1,
+      "firstName": "Alicia",
+      "lastName": "Anderson",
+      "playerName": "Ali",
+      "email": "alicia@email.com",
+      "phone": "0123456789",
+      "leaguesPlayed": []
+    },
+    {
+      "id": 2,
+      "firstName": "Brenda",
+      "lastName": "Baxter",
+      "playerName": "Bren",
+      "email": "brenda@email.com",
+      "phone": "02345678912",
+      "leaguesPlayed": []
+    },
+    {
+      "id": 3,
+      "firstName": "Carlita",
+      "lastName": "Caberra",
+      "playerName": "Carlita",
+      "email": "carlita@email.com",
+      "phone": "03456789123",
+      "leaguesPlayed": []
+    },
+    {
+      "id": 4,
+      "firstName": "Donna",
+      "lastName": "Duck",
+      "playerName": "Donna",
+      "email": "donna@email.com",
+      "phone": "04567891234",
+      "leaguesPlayed": []
+    },
+    {
+      "id": 5,
+      "firstName": "Elsa",
+      "lastName": "Enders",
+      "playerName": "Elsa",
+      "email": "else@email.com",
+      "phone": "05678912345",
+      "leaguesPlayed": []
+    },
+    {
+      "id": 6,
+      "firstName": "Frederica",
+      "lastName": "Fisher",
+      "playerName": "Fishi",
+      "email": "frederica@email.com",
+      "phone": "06789123456",
+      "leaguesPlayed": []
+    },
+    {
+      "id": 7,
+      "firstName": "Geraldine",
+      "lastName": "Gatwick",
+      "playerName": "Geri",
+      "email": "geri@email.com",
+      "phone": "07891234567",
+      "leaguesPlayed": []
+    },
+    {
+      "id": 8,
+      "firstName": "Henrietta",
+      "lastName": "Hatfield",
+      "playerName": "Hen",
+      "email": "hen@email.com",
+      "phone": "08912345678",
+      "leaguesPlayed": []
+    }
+  ],
+  "leagues": [
+    {
+      "id": 1,
+      "name": "8-Player Round Robin",
+      "location": "Yellowave",
+      "players": [1, 2, 3, 4, 5, 6, 7, 8]
+    }
+  ]
+}
