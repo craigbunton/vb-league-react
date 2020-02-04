@@ -26,10 +26,10 @@ const Navbar = ({ title, icon }) => {
   // );
   const guestLinks = (
     <Fragment>
-      <h2>
+      <h3>
         {" "}
         <i className={icon} /> {title}
-      </h2>
+      </h3>
       <ul>
         <li>
           <a onClick={onLogin} href="#!">
@@ -53,7 +53,7 @@ const Navbar = ({ title, icon }) => {
     </Fragment>
   );
 
-  return <div className="navbar bg-primary">{guestLinks}</div>;
+  return <div className="navbar bg-primary container">{guestLinks}</div>;
 };
 
 Navbar.propTypes = {

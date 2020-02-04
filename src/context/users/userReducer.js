@@ -1,13 +1,13 @@
-import { GET_PLAYERS, SET_LOADING, PLAYERS_ERROR } from "../types";
+import { GET_USERS, REGISTER_USER, SET_LOADING, USERS_ERROR } from "../types";
 
-// ADD_PLAYER
-// UPDATE_PLAYER
-// DELETE_PLAYER
-// SET_CURRENT_PLAYER
-// CLEAR_CURRENT_PLAYER
+// ADD_USER
+// UPDATE_USER
+// DELETE_USER
+// SET_CURRENT_USER
+// CLEAR_CURRENT_USER
 
 // const initialState = {
-//   players: null,
+//   users: null,
 //   loading: false,
 //   error: null
 // };
@@ -15,10 +15,10 @@ import { GET_PLAYERS, SET_LOADING, PLAYERS_ERROR } from "../types";
 export default (state, action) => {
   switch (action.type) {
     //
-    case GET_PLAYERS:
+    case GET_USERS:
       return {
         ...state,
-        players: action.payload,
+        users: action.payload,
         loading: false
       };
     case SET_LOADING:
@@ -27,7 +27,14 @@ export default (state, action) => {
         loading: true
       };
 
-    case PLAYERS_ERROR:
+    case REGISTER_USER:
+      return {
+        ...state,
+        users: [...state.users, action.payload],
+        loading: false
+      };
+
+    case USERS_ERROR:
       return {
         ...state,
         error: action.payload

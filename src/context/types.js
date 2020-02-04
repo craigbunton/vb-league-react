@@ -1,8 +1,9 @@
-export const GET_PLAYERS = "GET_PLAYERS";
-export const ADD_PLAYER = "ADD_PLAYER";
-export const UPDATE_PLAYER = "UPDATE_PLAYER";
-export const DELETE_PLAYER = "DELETE_PLAYER";
-export const SET_CURRENT_PLAYER = "SET_CURRENT_PLAYER";
-export const CLEAR_CURRENT_PLAYER = "CLEAR_CURRENT_PLAYER";
+export const GET_USERS = "GET_USERS";
+export const ADD_USER = "ADD_USER";
+export const REGISTER_USER = "REGISTER_USER";
+export const UPDATE_USER = "UPDATE_USER";
+export const DELETE_USER = "DELETE_USER";
+export const SET_CURRENT_USER = "SET_CURRENT_USER";
+export const CLEAR_CURRENT_USER = "CLEAR_CURRENT_USER";
 export const SET_LOADING = "SET_LOADING";
-export const PLAYERS_ERROR = "PLAYERS_ERROR";
+export const USERS_ERROR = "USERS_ERROR";

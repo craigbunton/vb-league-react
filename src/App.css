@@ -2,8 +2,8 @@
 
 /* Global Styles */
 :root {
-  --primary-color: #ceb004;
-  --dark-color: #333333;
+  --primary-color: #ffdf07;
+  --dark-color: #0086cd;
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
   --success-color: #28a745;
@@ -19,7 +19,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  background-color: #fff;
+  background-color: #ddd;
   color: #333;
 }
 
@@ -236,7 +236,7 @@ img {
 .badge-primary,
 .alert-primary {
   background: var(--primary-color);
-  color: #fff;
+  color: #555;
 }
 
 .btn-light,

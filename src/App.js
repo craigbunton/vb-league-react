@@ -1,8 +1,8 @@
-import React, { Fragment } from "react";
-import PlayerState from "./context/player/PlayerState";
+import React, { Fragment, useEffect } from "react";
+import UserState from "./context/users/UserState";
 import Navbar from "./components/layout/Navbar";
 
-import PlayerList from "./components/players/PlayerList";
+import UserList from "./components/users/UserList";
 
 import "materialize-css/dist/css/materialize.min.css";
 import M from "materialize-css/dist/js/materialize.min.js";
@@ -10,15 +10,20 @@ import M from "materialize-css/dist/js/materialize.min.js";
 import "./App.css";
 
 const App = () => {
+  useEffect(() => {
+    // Initialise Materialize JS
+    M.AutoInit();
+  });
+
   return (
-    <PlayerState>
+    <UserState>
       <Fragment>
         <Navbar />
         <div className="container">
-          <PlayerList />
+          <UserList />
         </div>
       </Fragment>
-    </PlayerState>
+    </UserState>
   );
 };
 
