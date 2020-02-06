@@ -84,29 +84,29 @@
       "id": 9,
       "firstName": "First",
       "lastName": "Last",
-      "playerName": "Player",
+      "playerName": "Three",
       "email": "email@email.com",
       "phone": "1234567",
       "password": "yellowave",
-      "active": false
+      "active": true
     },
     {
-      "firstName": "First",
-      "lastName": "Last",
-      "playerName": "Test",
-      "email": "email@email.com",
-      "phone": "1234567",
+      "firstName": "First1",
+      "lastName": "Last1",
+      "playerName": "Test ",
+      "email": "email@email.com1",
+      "phone": "12345671",
       "password": "yellowave",
-      "active": false,
+      "active": true,
       "": "false",
       "id": 10
     },
     {
-      "firstName": "",
-      "lastName": "",
-      "playerName": "sdsd",
-      "email": "",
-      "phone": "",
+      "firstName": "12",
+      "lastName": "12",
+      "playerName": "sdsd12",
+      "email": "12",
+      "phone": "112121212",
       "password": "yellowave",
       "active": {
         "active": true
@@ -114,52 +114,34 @@
       "id": 11
     },
     {
-      "firstName": "",
-      "lastName": "",
-      "playerName": "Ali",
-      "email": "",
-      "phone": "",
+      "firstName": "c",
+      "lastName": "c",
+      "playerName": "scoob-doo c",
+      "email": "c",
+      "phone": "c",
       "password": "yellowave",
-      "active": {
-        "active": true
-      },
+      "active": true,
       "id": 12
     },
     {
-      "firstName": "",
-      "lastName": "",
-      "playerName": "iii",
-      "email": "",
-      "phone": "",
+      "firstName": "abcz42sss",
+      "lastName": "abc43sss",
+      "playerName": "232341sss",
+      "email": "abc@abc.cosssm44",
+      "phone": "12345-343434sss",
       "password": "yellowave",
-      "active": {
-        "active": true
-      },
+      "active": false,
       "id": 13
     },
     {
-      "firstName": "",
-      "lastName": "",
-      "playerName": "ali",
-      "email": "",
-      "phone": "",
+      "firstName": "c",
+      "lastName": "c",
+      "playerName": "c",
+      "email": "c",
+      "phone": "c",
       "password": "yellowave",
-      "active": {
-        "active": true
-      },
+      "active": false,
       "id": 14
-    },
-    {
-      "firstName": "",
-      "lastName": "",
-      "playerName": "brend",
-      "email": "",
-      "phone": "",
-      "password": "yellowave",
-      "active": {
-        "active": true
-      },
-      "id": 15
     }
   ],
   "leagues": [

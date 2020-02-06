@@ -1,16 +1,13 @@
-import { GET_USERS, REGISTER_USER, SET_LOADING, USERS_ERROR } from "../types";
-
-// ADD_USER
-// UPDATE_USER
-// DELETE_USER
-// SET_CURRENT_USER
-// CLEAR_CURRENT_USER
-
-// const initialState = {
-//   users: null,
-//   loading: false,
-//   error: null
-// };
+import {
+  GET_USERS,
+  REGISTER_USER,
+  DELETE_USER,
+  UPDATE_USER,
+  SET_CURRENT_USER,
+  CLEAR_CURRENT_USER,
+  SET_LOADING,
+  USERS_ERROR
+} from "../types";
 
 export default (state, action) => {
   switch (action.type) {
@@ -21,17 +18,46 @@ export default (state, action) => {
         users: action.payload,
         loading: false
       };
-    case SET_LOADING:
-      return {
-        ...state,
-        loading: true
-      };
 
     case REGISTER_USER:
       return {
         ...state,
         users: [...state.users, action.payload],
         loading: false
+      };
+
+    case DELETE_USER:
+      return {
+        ...state,
+        users: state.users.filter(user => user.id !== action.payload),
+        loading: false
+      };
+
+    case UPDATE_USER:
+      return {
+        ...state,
+        users: state.users.map(user =>
+          user.id === action.payload.id ? action.payload : user
+        ),
+        loading: false
+      };
+
+    case SET_CURRENT_USER:
+      return {
+        ...state,
+        current: action.payload
+      };
+
+    case CLEAR_CURRENT_USER:
+      return {
+        ...state,
+        current: {}
+      };
+
+    case SET_LOADING:
+      return {
+        ...state,
+        loading: true
       };
 
     case USERS_ERROR:

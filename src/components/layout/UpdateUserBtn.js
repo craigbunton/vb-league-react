@@ -1,16 +1,16 @@
 import React from "react";
 
-const RegisterUserBtn = () => {
+const UpdateUserBtn = () => {
   return (
     <div className="fixed-action-btn">
       <a
         href="#register-user-modal"
         className="btn-floating btn-large blue darken-2 modal-trigger"
       >
-        <i className="large material-icons">person_add</i>
+        <i className="material-icons">edit</i>
       </a>
     </div>
   );
 };
 
-export default RegisterUserBtn;
+export default UpdateUserBtn;

@@ -16,13 +16,9 @@ const RegisterUserModal = () => {
     password: "yellowave"
   });
 
-  const [active, setActive] = useState({ active: true });
+  const [active, setActive] = useState(true);
 
   const { firstName, lastName, playerName, email, phone, password } = newUser;
-
-  const nameMatch = name => {
-    users.filter(user => user.playerName === name);
-  };
 
   const onChange = e => {
     setNewUser({ ...newUser, [e.target.name]: e.target.value });
@@ -34,7 +30,6 @@ const RegisterUserModal = () => {
     const matching = users.filter(
       user => user.playerName.toLowerCase() === playerName.toLowerCase()
     );
-    console.log(matching);
 
     if (playerName === "") {
       M.toast({ html: "Player Name is required to Register a new user" });
@@ -62,7 +57,7 @@ const RegisterUserModal = () => {
   return (
     <div id="register-user-modal" className="modal" style={modalStyle}>
       <div className="modal-content">
-        <h4>Add a new user</h4>
+        <h5>Add a new user</h5>
 
         <div className="row">
           <div className="input-field">
@@ -162,7 +157,7 @@ const RegisterUserModal = () => {
 
 const modalStyle = {
   width: "75%",
-  height: "95%"
+  height: "75%"
 };
 
 export default RegisterUserModal;
