@@ -6,10 +6,9 @@ const UserItem = ({ user }) => {
   const userContext = useContext(UserContext);
   const { setCurrentUser } = userContext;
 
-  const { playerName, firstName, lastName } = user;
+  const { playerName, firstName, lastName, active } = user;
 
   const onClick = e => {
-    console.log(user);
     setCurrentUser(user);
 
     // console.log(user);
@@ -24,7 +23,9 @@ const UserItem = ({ user }) => {
           className="modal-trigger"
           onClick={onClick}
         >
-          {playerName} : {firstName} {lastName}
+          <span className={active ? "text-dark" : "text-primary"}>
+            {playerName} : {firstName} {lastName}
+          </span>
         </a>
       </li>
     </Fragment>

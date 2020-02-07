@@ -8,7 +8,8 @@
       "playerName": "Ali",
       "email": "alicia@email.com",
       "phone": "0123456789",
-      "leaguesPlayed": []
+      "leaguesPlayed": [],
+      "active": true
     },
     {
       "id": 2,
@@ -18,7 +19,8 @@
       "playerName": "Bren",
       "email": "brenda@email.com",
       "phone": "02345678912",
-      "leaguesPlayed": []
+      "leaguesPlayed": [],
+      "active": true
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "playerName": "Carlita",
       "email": "carlita@email.com",
       "phone": "03456789123",
-      "leaguesPlayed": []
+      "leaguesPlayed": [],
+      "active": true
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "playerName": "Donna",
       "email": "donna@email.com",
       "phone": "04567891234",
-      "leaguesPlayed": []
+      "leaguesPlayed": [],
+      "active": true
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
       "playerName": "Elsa",
       "email": "else@email.com",
       "phone": "05678912345",
-      "leaguesPlayed": []
+      "leaguesPlayed": [],
+      "active": true
     },
     {
       "id": 6,
@@ -58,7 +63,8 @@
       "playerName": "Fishi",
       "email": "frederica@email.com",
       "phone": "06789123456",
-      "leaguesPlayed": []
+      "leaguesPlayed": [],
+      "active": true
     },
     {
       "id": 7,
@@ -68,7 +74,8 @@
       "playerName": "Geri",
       "email": "geri@email.com",
       "phone": "07891234567",
-      "leaguesPlayed": []
+      "leaguesPlayed": [],
+      "active": true
     },
     {
       "id": 8,
@@ -78,7 +85,8 @@
       "playerName": "Hen",
       "email": "hen@email.com",
       "phone": "08912345678",
-      "leaguesPlayed": []
+      "leaguesPlayed": [],
+      "active": true
     },
     {
       "id": 9,
@@ -86,62 +94,20 @@
       "lastName": "Last",
       "playerName": "Three",
       "email": "email@email.com",
-      "phone": "1234567",
+      "phone": "01234 567890",
       "password": "yellowave",
       "active": true
     },
     {
       "firstName": "First1",
       "lastName": "Last1",
-      "playerName": "Test ",
+      "playerName": "Test",
       "email": "email@email.com1",
       "phone": "12345671",
       "password": "yellowave",
-      "active": true,
+      "active": false,
       "": "false",
       "id": 10
-    },
-    {
-      "firstName": "12",
-      "lastName": "12",
-      "playerName": "sdsd12",
-      "email": "12",
-      "phone": "112121212",
-      "password": "yellowave",
-      "active": {
-        "active": true
-      },
-      "id": 11
-    },
-    {
-      "firstName": "c",
-      "lastName": "c",
-      "playerName": "scoob-doo c",
-      "email": "c",
-      "phone": "c",
-      "password": "yellowave",
-      "active": true,
-      "id": 12
-    },
-    {
-      "firstName": "abcz42sss",
-      "lastName": "abc43sss",
-      "playerName": "232341sss",
-      "email": "abc@abc.cosssm44",
-      "phone": "12345-343434sss",
-      "password": "yellowave",
-      "active": false,
-      "id": 13
-    },
-    {
-      "firstName": "c",
-      "lastName": "c",
-      "playerName": "c",
-      "email": "c",
-      "phone": "c",
-      "password": "yellowave",
-      "active": false,
-      "id": 14
     }
   ],
   "leagues": [
@@ -149,6 +115,383 @@
       "id": 1,
       "name": "8-Player Round Robin",
       "location": "Yellowave",
+      "active:": true,
+      "startDate": null,
+      "endDate": null,
+      "leaguePlayers": {
+        "player1": {
+          "userid": null,
+          "stats": {
+            "played": 0,
+            "won": 0,
+            "lost": 0,
+            "pointsWon": 0,
+            "pointsLost": 0,
+            "pointsDiff": 0,
+            "points": 0
+          }
+        },
+        "player2": {
+          "userid": null,
+          "stats": {
+            "played": 0,
+            "won": 0,
+            "lost": 0,
+            "pointsWon": 0,
+            "pointsLost": 0,
+            "pointsDiff": 0,
+            "points": 0
+          }
+        },
+        "player3": {
+          "userid": null,
+          "stats": {
+            "played": 0,
+            "won": 0,
+            "lost": 0,
+            "pointsWon": 0,
+            "pointsLost": 0,
+            "pointsDiff": 0,
+            "points": 0
+          }
+        },
+        "player4": {
+          "userid": null,
+          "stats": {
+            "played": 0,
+            "won": 0,
+            "lost": 0,
+            "pointsWon": 0,
+            "pointsLost": 0,
+            "pointsDiff": 0,
+            "points": 0
+          }
+        },
+        "player5": {
+          "userid": null,
+          "stats": {
+            "played": 0,
+            "won": 0,
+            "lost": 0,
+            "pointsWon": 0,
+            "pointsLost": 0,
+            "pointsDiff": 0,
+            "points": 0
+          }
+        },
+        "player6": {
+          "userid": null,
+          "stats": {
+            "played": 0,
+            "won": 0,
+            "lost": 0,
+            "pointsWon": 0,
+            "pointsLost": 0,
+            "pointsDiff": 0,
+            "points": 0
+          }
+        },
+        "player7": {
+          "userid": null,
+          "stats": {
+            "played": 0,
+            "won": 0,
+            "lost": 0,
+            "pointsWon": 0,
+            "pointsLost": 0,
+            "pointsDiff": 0,
+            "points": 0
+          }
+        },
+        "player8": {
+          "userid": null,
+          "stats": {
+            "played": 0,
+            "won": 0,
+            "lost": 0,
+            "pointsWon": 0,
+            "pointsLost": 0,
+            "pointsDiff": 0,
+            "points": 0
+          }
+        }
+      },
+      "games": {
+        "game1": {
+          "scheduledDate": null,
+          "referee": null,
+          "timeStamp": null,
+          "team1": {
+            "players": {
+              "player1": null,
+              "player2": null
+            },
+            "score": 0
+          },
+          "team2": {
+            "players": {
+              "player1": null,
+              "player2": null
+            },
+            "score": 0
+          }
+        },
+        "game2": {
+          "scheduledDate": null,
+          "referee": null,
+          "timeStamp": null,
+          "team1": {
+            "players": {
+              "player1": null,
+              "player2": null
+            },
+            "score": 0
+          },
+          "team2": {
+            "players": {
+              "player1": null,
+              "player2": null
+            },
+            "score": 0
+          }
+        },
+        "game3": {
+          "scheduledDate": null,
+          "referee": null,
+          "timeStamp": null,
+          "team1": {
+            "players": {
+              "player1": null,
+              "player2": null
+            },
+            "score": 0
+          },
+          "team2": {
+            "players": {
+              "player1": null,
+              "player2": null
+            },
+            "score": 0
+          }
+        },
+        "game4": {
+          "scheduledDate": null,
+          "referee": null,
+          "timeStamp": null,
+          "team1": {
+            "players": {
+              "player1": null,
+              "player2": null
+            },
+            "score": 0
+          },
+          "team2": {
+            "players": {
+              "player1": null,
+              "player2": null
+            },
+            "score": 0
+          }
+        },
+        "game5": {
+          "scheduledDate": null,
+          "referee": null,
+          "timeStamp": null,
+          "team1": {
+            "players": {
+              "player1": null,
+              "player2": null
+            },
+            "score": 0
+          },
+          "team2": {
+            "players": {
+              "player1": null,
+              "player2": null
+            },
+            "score": 0
+          }
+        },
+        "game6": {
+          "scheduledDate": null,
+          "referee": null,
+          "timeStamp": null,
+          "team1": {
+            "players": {
+              "player1": null,
+              "player2": null
+            },
+            "score": 0
+          },
+          "team2": {
+            "players": {
+              "player1": null,
+              "player2": null
+            },
+            "score": 0
+          }
+        },
+        "game7": {
+          "scheduledDate": null,
+          "referee": null,
+          "timeStamp": null,
+          "team1": {
+            "players": {
+              "player1": null,
+              "player2": null
+            },
+            "score": 0
+          },
+          "team2": {
+            "players": {
+              "player1": null,
+              "player2": null
+            },
+            "score": 0
+          }
+        },
+        "game8": {
+          "scheduledDate": null,
+          "referee": null,
+          "timeStamp": null,
+          "team1": {
+            "players": {
+              "player1": null,
+              "player2": null
+            },
+            "score": 0
+          },
+          "team2": {
+            "players": {
+              "player1": null,
+              "player2": null
+            },
+            "score": 0
+          }
+        },
+        "game9": {
+          "scheduledDate": null,
+          "referee": null,
+          "timeStamp": null,
+          "team1": {
+            "players": {
+              "player1": null,
+              "player2": null
+            },
+            "score": 0
+          },
+          "team2": {
+            "players": {
+              "player1": null,
+              "player2": null
+            },
+            "score": 0
+          }
+        },
+        "game10": {
+          "scheduledDate": null,
+          "referee": null,
+          "timeStamp": null,
+          "team1": {
+            "players": {
+              "player1": null,
+              "player2": null
+            },
+            "score": 0
+          },
+          "team2": {
+            "players": {
+              "player1": null,
+              "player2": null
+            },
+            "score": 0
+          }
+        },
+        "game11": {
+          "scheduledDate": null,
+          "referee": null,
+          "timeStamp": null,
+          "team1": {
+            "players": {
+              "player1": null,
+              "player2": null
+            },
+            "score": 0
+          },
+          "team2": {
+            "players": {
+              "player1": null,
+              "player2": null
+            },
+            "score": 0
+          }
+        },
+        "game12": {
+          "scheduledDate": null,
+          "referee": null,
+          "timeStamp": null,
+          "team1": {
+            "players": {
+              "player1": null,
+              "player2": null
+            },
+            "score": 0
+          },
+          "team2": {
+            "players": {
+              "player1": null,
+              "player2": null
+            },
+            "score": 0
+          }
+        },
+        "game13": {
+          "scheduledDate": null,
+          "referee": null,
+          "timeStamp": null,
+          "team1": {
+            "players": {
+              "player1": null,
+              "player2": null
+            },
+            "score": 0
+          },
+          "team2": {
+            "players": {
+              "player1": null,
+              "player2": null
+            },
+            "score": 0
+          }
+        },
+        "game14": {
+          "scheduledDate": null,
+          "referee": null,
+          "timeStamp": null,
+          "team1": {
+            "players": {
+              "player1": null,
+              "player2": null
+            },
+            "score": 0
+          },
+          "team2": {
+            "players": {
+              "player1": null,
+              "player2": null
+            },
+            "score": 0
+          }
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "Men's competition",
+      "location": "Brighton Beach",
+      "active:": true,
+      "startDate": null,
+      "endDate": null,
       "leaguePlayers": {
         "player1": {
           "userid": null,

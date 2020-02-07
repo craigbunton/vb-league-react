@@ -10,8 +10,8 @@ import {
   UPDATE_USER,
   SET_CURRENT_USER,
   CLEAR_CURRENT_USER,
-  SET_LOADING,
-  USERS_ERROR
+  SET_USER_LOADING,
+  USER_ERROR
 } from "../types";
 
 const UserState = props => {
@@ -37,7 +37,6 @@ const UserState = props => {
     try {
       setLoading();
       const res = await axios.get("/users");
-      // const data = await res.json();
 
       dispatch({
         type: GET_USERS,
@@ -45,7 +44,7 @@ const UserState = props => {
       });
     } catch (err) {
       dispatch({
-        type: USERS_ERROR,
+        type: USER_ERROR,
         payload: err.response.msg
       });
     }
@@ -67,7 +66,7 @@ const UserState = props => {
       });
     } catch (err) {
       dispatch({
-        type: USERS_ERROR,
+        type: USER_ERROR,
         payload: err.response.msg
       });
     }
@@ -85,7 +84,7 @@ const UserState = props => {
       });
     } catch (err) {
       dispatch({
-        type: USERS_ERROR,
+        type: USER_ERROR,
         payload: err.response.msg
       });
     }
@@ -108,7 +107,7 @@ const UserState = props => {
       });
     } catch (err) {
       dispatch({
-        type: USERS_ERROR,
+        type: USER_ERROR,
         payload: err.response.msg
       });
     }
@@ -127,7 +126,7 @@ const UserState = props => {
   // Set loading to true
   const setLoading = () => {
     return {
-      type: SET_LOADING
+      type: SET_USER_LOADING
     };
   };
 

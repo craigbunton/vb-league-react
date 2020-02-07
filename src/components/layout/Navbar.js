@@ -30,7 +30,10 @@ const Navbar = ({ title, icon }) => {
       <nav>
         <div className="nav-wrapper">
           <i className="fas fa-volleyball-ball" />
-          <h5 className="brand-logo"> League Tracker</h5>
+          <h5 className="brand-logo" style={{ paddingLleft: "20px" }}>
+            {" "}
+            League Tracker
+          </h5>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
             <li>
               <a onClick={onLogin} href="#!">

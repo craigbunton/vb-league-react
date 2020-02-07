@@ -1,66 +1,66 @@
 import {
-  GET_USERS,
-  REGISTER_USER,
-  DELETE_USER,
-  UPDATE_USER,
-  SET_CURRENT_USER,
-  CLEAR_CURRENT_USER,
-  SET_USER_LOADING,
-  USER_ERROR
+  GET_LEAGUES,
+  ADD_LEAGUE,
+  UPDATE_LEAGUE,
+  DELETE_LEAGUE,
+  SET_CURRENT_LEAGUE,
+  CLEAR_CURRENT_LEAGUE,
+  SET_LEAGUE_LOADING,
+  LEAGUE_ERROR
 } from "../types";
 
 export default (state, action) => {
   switch (action.type) {
     //
-    case GET_USERS:
+    case GET_LEAGUES:
       return {
         ...state,
-        users: action.payload,
+        leagues: action.payload,
         loading: false
       };
 
-    case REGISTER_USER:
+    case ADD_LEAGUE:
       return {
         ...state,
-        users: [...state.users, action.payload],
+        leagues: [...state.leagues, action.payload],
         loading: false
       };
 
-    case DELETE_USER:
+    case UPDATE_LEAGUE:
       return {
         ...state,
-        users: state.users.filter(user => user.id !== action.payload),
-        loading: false
-      };
-
-    case UPDATE_USER:
-      return {
-        ...state,
-        users: state.users.map(user =>
-          user.id === action.payload.id ? action.payload : user
+        leagues: state.leagues.map(league =>
+          league.id === action.payload.id ? action.payload : league
         ),
         loading: false
       };
 
-    case SET_CURRENT_USER:
+    case DELETE_LEAGUE:
+      return {
+        ...state,
+        leagues: state.leagues.filter(league => league.id !== action.payload),
+        loading: false
+      };
+
+    case SET_CURRENT_LEAGUE:
       return {
         ...state,
         current: action.payload
       };
 
-    case CLEAR_CURRENT_USER:
+    case CLEAR_CURRENT_LEAGUE:
       return {
         ...state,
         current: {}
       };
 
-    case SET_USER_LOADING:
+    case SET_LEAGUE_LOADING:
       return {
         ...state,
         loading: true
       };
 
-    case USER_ERROR:
+    case LEAGUE_ERROR:
       return {
         ...state,
         error: action.payload

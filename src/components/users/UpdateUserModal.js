@@ -18,7 +18,6 @@ const UpdateUserModal = () => {
   const [newUser, setNewUser] = useState(current);
 
   const { firstName, lastName, playerName, email, phone, active } = newUser;
-  console.log(newUser);
 
   const onChange = e => {
     setNewUser({ ...newUser, [e.target.name]: e.target.value });
