@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import UserContext from "../../context/users/userContext";
 
-import M from "materialize-css/dist/js/materialize.min.js";
+// import M from "materialize-css/dist/js/materialize.min.js";
 
 const DeleteUserModal = user => {
   //
