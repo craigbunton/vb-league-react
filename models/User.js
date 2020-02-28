@@ -1,6 +1,11 @@
 const mongoose = require("mongoose");
 
-const PlayerSchema = mongoose.Schema({
+const UserSchema = mongoose.Schema({
+  userName: {
+    type: String,
+    required: true,
+    unique: true
+  },
   firstName: {
     type: String,
     required: false
@@ -8,11 +13,6 @@ const PlayerSchema = mongoose.Schema({
   lastName: {
     type: String,
     required: false
-  },
-  playerName: {
-    type: String,
-    required: true,
-    unique: true
   },
   email: {
     type: String,
@@ -22,17 +22,21 @@ const PlayerSchema = mongoose.Schema({
     type: String,
     required: false
   },
-
   password: {
     type: String,
     required: true
   },
-
-  active: {
+  isActive: {
     type: Boolean,
-    required: false
+    required: false,
+    default: true
+  },
+  isManager: {
+    type: Boolean,
+    required: false,
+    default: false
   },
   leagues: []
 });
 
-module.exports = mongoose.model("player", PlayerSchema);
+module.exports = mongoose.model("user", UserSchema);

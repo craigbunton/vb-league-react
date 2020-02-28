@@ -1,11 +1,11 @@
 import React, { Fragment, useState, useContext, useEffect } from "react";
-import UserContext from "../../context/users/userContext";
+import AuthContext from "../../context/auth/authContext";
 //
 //
 const UpdateUserModal = () => {
   //
-  const userContext = useContext(UserContext);
-  const { current, updateUser, deleteUser, clearCurrentUser } = userContext;
+  const authContext = useContext(AuthContext);
+  const { current, updateUser, deleteUser, clearCurrentUser } = authContext;
 
   // const [newUser, setNewUser] = useState();
 
@@ -17,7 +17,7 @@ const UpdateUserModal = () => {
 
   const [newUser, setNewUser] = useState(current);
 
-  const { firstName, lastName, playerName, email, phone, active } = newUser;
+  const { userName, firstName, lastName, email, phone, active } = newUser;
 
   const onChange = e => {
     setNewUser({ ...newUser, [e.target.name]: e.target.value });
@@ -42,8 +42,8 @@ const UpdateUserModal = () => {
             <div className="input-field">
               <input
                 type="text"
-                name="playerName"
-                value={playerName}
+                name="userName"
+                value={userName}
                 onChange={onChange}
               />
             </div>

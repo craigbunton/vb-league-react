@@ -1,16 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
-
+import LoginUserModal from "../../components/users/LoginUserModal";
+import RegisterUserModal from "../../components/users/RegisterUserModal";
 const Navbar = ({ title, icon }) => {
   // const onLogout = () => {
   //   return;
   // };
-  const onLogin = () => {
-    return;
-  };
-  const onRegister = () => {
-    return;
-  };
+  // const onLogin = () => {
+  //   return;
+  // };
+  // const onRegister = () => {
+  //   return;
+  // };
 
   // const managerLinks = ()
 
@@ -27,30 +28,26 @@ const Navbar = ({ title, icon }) => {
 
   return (
     <div className="navbar-fixed">
+      <LoginUserModal />
+      <RegisterUserModal />
       <nav>
         <div className="nav-wrapper">
           <i className="fas fa-volleyball-ball" />
-          <h5 className="brand-logo" style={{ paddingLleft: "20px" }}>
+          <h5 className="brand-logo" style={{ paddingLeft: "20px" }}>
             {" "}
             League Tracker
           </h5>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
             <li>
-              <a onClick={onLogin} href="#!">
-                <i className="fas fa-user" />{" "}
-                <span className="hide-sm">Profile</span>
-              </a>
-            </li>
-            <li>
-              <a onClick={onLogin} href="#!">
+              <a className=" modal-trigger" href="#login-user-modal">
                 <i className="fas fa-sign-in-alt" />{" "}
                 <span className="hide-sm">Log In</span>
               </a>
             </li>
             <li>
-              <a onClick={onRegister} href="#!">
+              <a className=" modal-trigger" href="#register-user-modal">
                 <i className="fas fa-sign-out-alt" />{" "}
-                <span className="hide-sm">Log Out</span>
+                <span className="hide-sm">Register</span>
               </a>
             </li>
           </ul>

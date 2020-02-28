@@ -1,7 +1,8 @@
 import React, { Fragment, useEffect } from "react";
-import UserState from "./context/users/UserState";
+import AuthState from "./context/auth/AuthState";
 import LeagueState from "./context/leagues/LeagueState";
 import Navbar from "./components/layout/Navbar";
+import setAuthToken from "./utils/setAuthToken";
 
 import UserList from "./components/users/UserList";
 import LeagueList from "./components/leagues/LeageList";
@@ -11,6 +12,10 @@ import M from "materialize-css/dist/js/materialize.min.js";
 
 import "./App.css";
 
+if (localStorage.token) {
+  setAuthToken(localStorage.token);
+}
+
 const App = () => {
   useEffect(() => {
     // Initialise Materialize JS
@@ -18,7 +23,7 @@ const App = () => {
   });
 
   return (
-    <UserState>
+    <AuthState>
       <LeagueState>
         <Fragment>
           <Navbar />
@@ -30,7 +35,7 @@ const App = () => {
           </div>
         </Fragment>
       </LeagueState>
-    </UserState>
+    </AuthState>
   );
 };
 

@@ -1,13 +1,13 @@
 import React, { useContext } from "react";
-import UserContext from "../../context/users/userContext";
+import AuthContext from "../../context/auth/authContext";
 
 // import M from "materialize-css/dist/js/materialize.min.js";
 
 const DeleteUserModal = user => {
   //
-  const userContext = useContext(UserContext);
-  const { deleteUser } = userContext;
-  const { playerName, firstName, lastName, id } = user;
+  const authContext = useContext(AuthContext);
+  const { deleteUser } = authContext;
+  const { userName, firstName, lastName, id } = user;
 
   const onDelete = () => {
     deleteUser(id);
@@ -17,7 +17,7 @@ const DeleteUserModal = user => {
     <div id="#delete_user_modal" className="modal" style={modalStyle}>
       <div className="modal-content">
         <h6>
-          `Are you sure you want to delete user ${playerName} ${firstName} $
+          `Are you sure you want to delete user ${userName} ${firstName} $
           {lastName}`
         </h6>
         <div>

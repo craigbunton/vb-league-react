@@ -1,16 +1,16 @@
 import React, { useState, useContext } from "react";
-import UserContext from "../../context/users/userContext";
+import AuthContext from "../../context/auth/authContext";
 import M from "materialize-css/dist/js/materialize.min.js";
 
-const RegisterUserModal = () => {
+const RegisterUserModal = props => {
   //
-  const userContext = useContext(UserContext);
-  const { users, registerUser } = userContext;
+  const authContext = useContext(AuthContext);
+  const { users, registerUser } = authContext;
 
   const [newUser, setNewUser] = useState({
+    userName: "",
     firstName: "",
     lastName: "",
-    playerName: "",
     email: "",
     phone: "",
     password: "yellowave"
@@ -18,7 +18,7 @@ const RegisterUserModal = () => {
 
   const [active, setActive] = useState(true);
 
-  const { firstName, lastName, playerName, email, phone, password } = newUser;
+  const { userName, firstName, lastName, email, phone, password } = newUser;
 
   const onChange = e => {
     setNewUser({ ...newUser, [e.target.name]: e.target.value });
@@ -26,20 +26,22 @@ const RegisterUserModal = () => {
 
   const onSubmit = () => {
     //
+    let matchingUsername = false;
+    if (users) {
+      matchingUsername = users.filter(
+        user => user.userName.toLowerCase() === userName.toLowerCase()
+      );
+    }
 
-    const matching = users.filter(
-      user => user.playerName.toLowerCase() === playerName.toLowerCase()
-    );
-
-    if (playerName === "") {
-      M.toast({ html: "Player Name is required to Register a new user" });
-    } else if (matching.length > 0) {
-      M.toast({ html: "Player Names must be unique. That name is taken." });
+    if (userName === "") {
+      M.toast({ html: "User Name is required to Register a new user" });
+    } else if (matchingUsername) {
+      M.toast({ html: "User Names must be unique. That name is taken." });
     } else {
       const newUserData = {
+        userName,
         firstName,
         lastName,
-        playerName,
         email,
         phone,
         password,
@@ -57,15 +59,15 @@ const RegisterUserModal = () => {
   return (
     <div id="register-user-modal" className="modal" style={modalStyle}>
       <div className="modal-content">
-        <h5>Add a new user</h5>
+        <h5>Register new user</h5>
 
         <div className="row">
           <div className="input-field">
             <input
-              placeholder="Player Name"
+              placeholder="User Name"
               type="text"
-              name="playerName"
-              value={playerName}
+              name="userName"
+              value={userName}
               onChange={onChange}
             />
             {/* <label htmlFor="playerName">Player Name</label> */}

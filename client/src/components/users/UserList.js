@@ -1,14 +1,14 @@
 import React, { useEffect, useContext } from "react";
 import UserItem from "./UserItem";
-import RegisterUserBtn from "../layout/RegisterUserBtn";
-import RegisterUserModal from "./RegisterUserModal";
-import UserContext from "../../context/users/userContext";
-import DeleteUserModal from "./DeleteUserModal";
-import UpdateUserModal from "./UpdateUserModal";
+// import RegisterUserBtn from "../layout/RegisterUserBtn";
+// import RegisterUserModal from "./RegisterUserModal";
+import AuthContext from "../../context/auth/authContext";
+// import DeleteUserModal from "./DeleteUserModal";
+// import UpdateUserModal from "./UpdateUserModal";
 
 const UserList = () => {
-  const userContext = useContext(UserContext);
-  const { users, loading, getUsers } = userContext;
+  const authContext = useContext(AuthContext);
+  const { users, loading, getUsers } = authContext;
 
   useEffect(() => {
     getUsers();
@@ -22,15 +22,15 @@ const UserList = () => {
   return (
     <div>
       <h5>Registered Users</h5>
-      <RegisterUserModal />
+      {/* <RegisterUserModal /> */}
       <ul className="collection">
         {!loading &&
           users !== null &&
-          users.map(user => <UserItem user={user} key={user.id} />)}
+          users.map(user => <UserItem user={user} key={user._id} />)}
       </ul>
-      <RegisterUserBtn />
-      <UpdateUserModal />
-      <DeleteUserModal />
+      {/* <RegisterUserBtn /> */}
+      {/* <UpdateUserModal /> */}
+      {/* <DeleteUserModal /> */}
     </div>
   );
 };

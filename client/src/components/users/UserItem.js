@@ -1,10 +1,10 @@
 import React, { Fragment, useContext } from "react";
 import PropTypes from "prop-types";
-import UserContext from "../../context/users/userContext";
+import AuthContext from "../../context/auth/authContext";
 
 const UserItem = ({ user }) => {
-  const userContext = useContext(UserContext);
-  const { setCurrentUser } = userContext;
+  const authContext = useContext(AuthContext);
+  const { setCurrentUser } = authContext;
 
   const { playerName, firstName, lastName, active } = user;
 

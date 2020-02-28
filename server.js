@@ -9,10 +9,13 @@ connectDB();
 // Init Middleware
 app.use(express.json({ extended: false }));
 
-// Define Routes...
-app.use("/api/players", require("./routes/players"));
+// DEFINE ROUTES:
+
+// Register, retrieve, update, delete user objects from the database
+app.use("/api/users", require("./routes/users"));
+
+// login, logout, get web tokens etc
 app.use("/api/auth", require("./routes/auth"));
-// app.use("/api/leagues", require("./routes/leagues"));
 
 // Serve static assets in production
 if (process.env.NODE_ENV === "production") {
